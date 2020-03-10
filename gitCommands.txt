@@ -1,9 +1,20 @@
-git init             // initializes a repository in the current directory
-git add <file>       // adds specified file to staging area
-git add -A           // adds all files to staging area
-git status           // shows which files are ready to be committed from your staging area
-git reset <file>     // removes file from staging area (don't specify file to remove all)
+git init                // initializes a repository in the current directory
+git add <file>          // adds specified file to staging area
+git add -A              // adds all files to staging area
+git status              // shows which files are ready to be committed from your staging area
+git reset <file>        // removes file from staging area (don't specify file to remove all)
 git commit -m "message" // commits files to repository
-git log              // shows log of commits to the repository
-git clone <url> <specify file location> // clones either a local or online repository
-touch .gitignore     // creates a .gitignore file; specifies which files to ignore when pushing to repo (check out the one in this project for an example)
+git log                 // shows log of commits to the repository
+git clone <url> <file location> // clones either a local or online repository
+git remote -v           // shows information about the remote repository
+git branch -a           // shows all branches of the remote repository
+git diff                // shows differences between your working directory and local master
+git pull origin master  // shows the most recent master from the remote repository master
+git push origin master  // pushes your staged changes to the remote repository master
+git branch <new branch name> // creates a branch for you to work on
+git checkout <branch name> // switches to specified branch
+git push -u origin <branch name> // pushes the specified branch to the local master
+git merge <branch name> // merges specified branch with master (must still be pushed)
+git branch -d <branch name> // deletes branch (use once changes are merged)
+git push origin --delete <branch name> // deletes branch from remote repository
+touch .gitignore        // creates a .gitignore file; specifies which files to ignore when pushing to repo (check out the one in this project for an example)
