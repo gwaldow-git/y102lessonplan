@@ -1,0 +1,9 @@
+git init             // initializes a repository in the current directory
+git add <file>       // adds specified file to staging area
+git add -A           // adds all files to staging area
+git status           // shows which files are ready to be committed from your staging area
+git reset <file>     // removes file from staging area (don't specify file to remove all)
+git commit -m "message" // commits files to repository
+git log              // shows log of commits to the repository
+git clone <url> <specify file location> // clones either a local or online repository
+touch .gitignore     // creates a .gitignore file; specifies which files to ignore when pushing to repo (check out the one in this project for an example)
